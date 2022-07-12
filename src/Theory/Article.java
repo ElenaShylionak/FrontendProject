@@ -32,8 +32,6 @@ public class Article {
 
     //<a href="mailto:mail@htmlacademy.ru">Напишите нам</a>
 
-
-
     //<!-- Рабочая ссылка -->
     //<a href="tel:+74951234567">+7 (495) 123-45-67</a>
     //<!-- Нерабочая -->
