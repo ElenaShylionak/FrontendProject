@@ -22,18 +22,25 @@
             <button type="submit">Submit</button>
 
         </form>
-</details>
-
 
 <summary> Post forms</summary>
+
 <form action="https://usebasin.com/f/ea6556c766a6"
-      method="POST" target="_blank">
+      method="POST" target="_blank"
+    enctype="multipart/form-data">
     <!--использован сервис usebasin, который принимает данная форма. Это бесплатный сервис-->
+    <!--multipart/form-data - отправка данных смешанного формата файлы и данные -->
+
     <label for="email_2"> Email </label>
     <input id="email_2" type="email" name="email">
     <br>
     <label for="password_2"> Password </label>
     <input id="password_2" type="password" name="password">
+    <br>
+
+    <br>
+    <label for="file_1"> File </label>
+    <input id="file_1" type="file" name="file">
     <br>
 
     <button type="reset">Reset</button>
@@ -51,5 +58,39 @@
         <p><input type="submit"></p>
     </form>
 </details>
+<details open>
+    <!--Элемент <fieldset> предназначен для группирования элементов формы.
+    Такая группировка облегчает работу с формами, содержащими большое число данных.
+    Например, один блок может быть предназначен для ввода текстовой информации, а другой — для флажков. -->
+    <form action="handler.php">
+        <summary> Filedset</summary> <!--Тег <legend> применяется для создания заголовка группы элементов форм.
+        Группа элементов обозначается в браузере с помощью рамки, а текст, который располагается внутри контейнера <legend>, встраивается в эту рамку.-->
+        <legend>Login</legend>
+
+            <label for="email_3"> Email </label>
+            <input id="email_3" type="email" name="email">
+            <br>
+            <label for="password_3"> Password </label>
+            <input id="password_3" type="password" name="password">  <!--name="password" - используется как ключ -->
+            <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+     </form>
+</details>
+
+<form action="handler.php">
+    <fieldset>
+        <legend>Работа со временем</legend>
+        <input type="checkbox"> создание пунктуальности (никогда не
+        будете никуда опаздывать);<br>
+        <input type="checkbox"> излечение от пунктуальности (никогда
+        никуда не будете торопиться);<br>
+        <input type="checkbox"> изменение восприятия времени и часов.
+        <p><input type="submit"></p>
+    </fieldset>
+</form>
+</details>
+
 </body>
 </html>
